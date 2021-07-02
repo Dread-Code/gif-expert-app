@@ -1,0 +1,16 @@
+.add-category-container {
+  display: flex;
+}
+
+*:focus {
+  outline: none;
+}
+
+input {
+  justify-self: center;
+  font-size: 1.3rem;
+  width: 100%;
+  color: grey;
+  border-radius: 0.4em;
+  margin: 0.5em;
+}
