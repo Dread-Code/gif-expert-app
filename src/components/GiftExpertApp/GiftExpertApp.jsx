@@ -2,11 +2,7 @@ import React, { useState } from "react";
 import AddCategory from "../AddCategory";
 
 const GiftExpertApp = () => {
-  const [categories, setCategories] = useState([
-    "One Punch",
-    "Samurai X",
-    "Dragon Ball",
-  ]);
+  const [categories, setCategories] = useState(["Dororo"]);
 
   return (
     <div>

@@ -1,33 +1,33 @@
-import React, { useState } from "react";
-import PropTypes from "prop-types";
-import "./AddCategory.css";
+import React, { useState } from 'react'
+import PropTypes from 'prop-types'
+import './AddCategory.css'
 
 const AddCategory = ({ setCategories, categories }) => {
-  const [inputValue, setInputValue] = useState("");
+  const [inputValue, setInputValue] = useState('')
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = e => {
+    e.preventDefault()
     if (inputValue) {
-      setCategories([...categories, inputValue]);
-      setInputValue("");
+      setCategories([...categories, inputValue])
+      setInputValue('')
     }
-  };
+  }
 
   return (
     <form className="add-category-container" onSubmit={handleSubmit}>
       <input
         type="text"
-        placeholder={"Que quieres buscar?"}
+        placeholder={'Que quieres buscar?'}
         value={inputValue}
-        onChange={(e) => setInputValue(e.target.value)}
+        onChange={e => setInputValue(e.target.value)}
       />
     </form>
-  );
-};
+  )
+}
 
 AddCategory.propTypes = {
   setCategories: PropTypes.func.isRequired,
-  categories: PropTypes.array.isRequired,
-};
+  categories: PropTypes.array.isRequired
+}
 
-export default AddCategory;
+export default AddCategory
