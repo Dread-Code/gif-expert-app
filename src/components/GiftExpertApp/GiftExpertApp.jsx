@@ -11,7 +11,7 @@ const GiftExpertApp = () => {
   return (
     <div>
       <h2>GiftExpertApp</h2>
-      <AddCategory setCategories={setCategories} />
+      <AddCategory setCategories={setCategories} categories={categories} />
       <hr></hr>
       <ol>
         {categories.map((category, key) => (
