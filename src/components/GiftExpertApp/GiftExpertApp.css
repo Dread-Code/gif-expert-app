@@ -1,0 +1,16 @@
+.gif-grid {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(min(100%, 10em), 1fr));
+  grid-gap: 0.4em;
+  grid-auto-rows: minmax(min(100%, 15em), 1fr);
+  grid-auto-columns: minmax(min(100%, 20rem), 1fr);
+  grid-auto-flow: row dense;
+}
+
+h2 {
+  color: white;
+}
