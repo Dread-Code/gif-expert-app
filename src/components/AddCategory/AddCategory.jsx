@@ -8,7 +8,7 @@ const AddCategory = ({ setCategories, categories }) => {
   const handleSubmit = e => {
     e.preventDefault()
     if (inputValue) {
-      setCategories([...categories, inputValue])
+      setCategories([inputValue, ...categories])
       setInputValue('')
     }
   }
