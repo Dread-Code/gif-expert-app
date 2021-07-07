@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Gif Grid Item should Show shallow 1`] = `
+<div
+  className="card animate__animated animate__fadeIn"
+  style={
+    Object {
+      "backgroundImage": "url(\\"undefined\\")",
+    }
+  }
+/>
+`;
