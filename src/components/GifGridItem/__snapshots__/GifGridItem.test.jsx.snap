@@ -2,10 +2,11 @@
 
 exports[`Gif Grid Item should Show shallow 1`] = `
 <div
+  alt="Un titulo"
   className="card animate__animated animate__fadeIn"
   style={
     Object {
-      "backgroundImage": "url(\\"undefined\\")",
+      "backgroundImage": "url(\\"https://localhost/algo.jpg\\")",
     }
   }
 />
