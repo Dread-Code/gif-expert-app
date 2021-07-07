@@ -27,4 +27,13 @@ describe('AddCAtegory Tests', () => {
     wrapper.find('form').simulate('submit', { preventDefault() {} })
     expect(setCategories).not.toHaveBeenCalled()
   })
+
+  test('should callled setCategorias an clean the text box', () => {
+    const value = 'Tokyo Ghoul'
+
+    wrapper.find('input').simulate('change', { target: { value } })
+    wrapper.find('form').simulate('submit', { preventDefault() {} })
+    expect(setCategories).toHaveBeenCalled()
+    expect(wrapper.find('input').prop('value')).toBe('')
+  })
 })
