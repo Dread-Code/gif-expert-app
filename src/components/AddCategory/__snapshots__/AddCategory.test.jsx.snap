@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddCAtegory Tests should show correctly 1`] = `
+<form
+  className="add-category-container"
+  onSubmit={[Function]}
+>
+  <input
+    onChange={[Function]}
+    placeholder="Que quieres buscar?"
+    type="text"
+    value=""
+  />
+</form>
+`;
