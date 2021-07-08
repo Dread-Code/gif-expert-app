@@ -33,5 +33,25 @@ describe('GifGrid test', () => {
 
     const wrapper = shallow(<GifGrid category={category} />)
     expect(wrapper).toMatchSnapshot()
+    expect(wrapper.find('GifGridItem').length).toBe(gifs.length)
+  })
+
+  test('should show items when the loading is false', () => {
+    const gifs = [
+      {
+        id: 'ABC',
+        url: 'https://localhost/cualquier/cosa.jpg',
+        title: 'Cualquier cosa'
+      }
+    ]
+
+    useGetGifs.mockReturnValue({
+      images: gifs,
+      loading: false
+    })
+
+    const wrapper = shallow(<GifGrid category={category} />)
+    expect(wrapper).toMatchSnapshot()
+    expect(wrapper.find('GifGridItem').length).toBe(0)
   })
 })

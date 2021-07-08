@@ -12,3 +12,11 @@ exports[`GifGrid test should show items when the images are loaded 1`] = `
   />
 </Fragment>
 `;
+
+exports[`GifGrid test should show items when the loading is false 1`] = `
+<h1
+  className="animate__animated animate__flash"
+>
+  Cargando...
+</h1>
+`;
