@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GifGrid test should run snapshot 1`] = `<Fragment />`;
+
+exports[`GifGrid test should show items when the images are loaded 1`] = `
+<Fragment>
+  <GifGridItem
+    id="ABC"
+    key="ABC"
+    title="Cualquier cosa"
+    url="https://localhost/cualquier/cosa.jpg"
+  />
+</Fragment>
+`;
