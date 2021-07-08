@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GifExpertApp should match snapshoot 1`] = `
+<div>
+  <h2>
+    GiftExpertApp
+  </h2>
+  <AddCategory
+    categories={Array []}
+    setCategories={[Function]}
+  />
+  <hr />
+  <div
+    className="gif-grid"
+  />
+</div>
+`;
+
+exports[`GifExpertApp should show a list of categories 1`] = `
+<div>
+  <h2>
+    GiftExpertApp
+  </h2>
+  <AddCategory
+    categories={
+      Array [
+        "One Punch",
+        "Dragon Ball",
+      ]
+    }
+    setCategories={[Function]}
+  />
+  <hr />
+  <div
+    className="gif-grid"
+  >
+    <GifGrid
+      category="One Punch"
+      key="One Punch0"
+    />
+    <GifGrid
+      category="Dragon Ball"
+      key="Dragon Ball1"
+    />
+  </div>
+</div>
+`;
